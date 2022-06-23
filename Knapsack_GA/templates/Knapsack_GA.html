@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Knapsack GA</title>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="feedback-input">
+                <label for="items" >Enter Items Names</label>  
+                <input name="items" id="items" type="text" class="feedback-input"  placeholder="1 2 3 4 5 6 7" value="1 2 3 4 5 6 7"/> 
+
+                <label for="values" >Enter Items Benefits</label>  
+                <input name="values" id="values" type="text" class="feedback-input" placeholder="5 8 3 2 7 9 4" value="5 8 3 2 7 9 4"/>  
+
+                <label for="weights" >Enter Items Weights</label>  
+                <input name="weights" id="weights" type="text" class="feedback-input" placeholder="5 8 3 2 7 9 4" value="7 8 4 10 4 6 4"/>  
+
+                <label for="limW" >Enter Maximum Weight</label>  
+                <input name="limW" id="limW" type="text" class="feedback-input" placeholder="22" value="22"/>                 
+            </div>
+            <input type="submit" name="submit" id="submit" value="GET RESULT"/>
+            <div id="result" name="result" class="feedback-input result"></div>
+        </div>
+    </div>
+    
+    
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
